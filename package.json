@@ -1,4 +1,5 @@
 {
+  "homepage": "http://whelxks.github.io/templeapp",
   "name": "templeapp",
   "version": "0.1.0",
   "private": true,
@@ -6,16 +7,28 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "bootstrap": "^4.6.0",
+    "holderjs": "^2.9.9",
+    "moment": "^2.29.1",
     "react": "^17.0.2",
+    "react-big-calendar": "^0.33.2",
+    "react-bootstrap": "^1.5.2",
+    "react-bootstrap-tabs": "^2.0.0",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-tabs": "^3.2.2",
+    "typeface-sofia": "^1.1.13",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +47,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "jquery": "^1.9.1"
   }
 }

@@ -11,3 +11,126 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-weight: "Black";
+  src: url(./fonts/Sofia-Pro-Black.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-weight: "Semibold";
+  src: url(./fonts/Sofia-Pro-Semibold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-weight: "Regular";
+  src: url(./fonts/Sofia-Pro-Regular.otf) format("opentype");
+}
+
+.header-style {
+  font-family: "Sofia Pro";
+  font-weight: "Black";
+  color: #131c0d;
+  
+}
+
+.navbar {
+  background-color: #ffffff;
+  height: 40px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 1.7rem;
+  background: none;
+}
+
+.nav-menu {
+  background-color: #EFDAD3;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  z-index: 1;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 350ms;
+}
+
+.nav-text {
+  display: flex;
+  padding: 2rem 0px 8px 16px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.nav-text a {
+  
+  text-decoration: none;
+  color: #131c0d;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-radius: 4px;
+  font-family: "Sofia Pro";
+}
+
+.nav-text a:hover {
+  
+  background-color: #A2C1C2;
+  color: #131c0d;;
+  text-decoration: none;
+}
+
+.nav-menu-items {
+  
+  width: 100%;
+  color: #131c0d;;
+  
+
+}
+
+.navbar-toggle {
+  background-color: #EFDAD3;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  
+  justify-content: start;
+  align-items: center;
+}
+
+span {
+  margin-left: 5px;
+}
+
+
+.rbc-calendar {
+  font-family: "Sofia Pro";
+  color: #131c0d;
+  min-height: 600px;
+  z-index: 0;
+}
+
+.TabPanel{
+  font-size: 10;
+
+}
