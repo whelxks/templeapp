@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/templeapp/static/css/main.6f3eba6f.chunk.css",
+    "main.js": "/templeapp/static/js/main.182bbbd1.chunk.js",
+    "main.js.map": "/templeapp/static/js/main.182bbbd1.chunk.js.map",
+    "runtime-main.js": "/templeapp/static/js/runtime-main.57f35d13.js",
+    "runtime-main.js.map": "/templeapp/static/js/runtime-main.57f35d13.js.map",
+    "static/css/2.6ccfeb6b.chunk.css": "/templeapp/static/css/2.6ccfeb6b.chunk.css",
+    "static/js/2.0bf22790.chunk.js": "/templeapp/static/js/2.0bf22790.chunk.js",
+    "static/js/2.0bf22790.chunk.js.map": "/templeapp/static/js/2.0bf22790.chunk.js.map",
+    "static/js/3.8f2a35b2.chunk.js": "/templeapp/static/js/3.8f2a35b2.chunk.js",
+    "static/js/3.8f2a35b2.chunk.js.map": "/templeapp/static/js/3.8f2a35b2.chunk.js.map",
+    "index.html": "/templeapp/index.html",
+    "static/css/2.6ccfeb6b.chunk.css.map": "/templeapp/static/css/2.6ccfeb6b.chunk.css.map",
+    "static/css/main.6f3eba6f.chunk.css.map": "/templeapp/static/css/main.6f3eba6f.chunk.css.map",
+    "static/js/2.0bf22790.chunk.js.LICENSE.txt": "/templeapp/static/js/2.0bf22790.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/templeapp/static/media/Sofia-Pro-Semibold.20448924.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.57f35d13.js",
+    "static/css/2.6ccfeb6b.chunk.css",
+    "static/js/2.0bf22790.chunk.js",
+    "static/css/main.6f3eba6f.chunk.css",
+    "static/js/main.182bbbd1.chunk.js"
+  ]
+}
