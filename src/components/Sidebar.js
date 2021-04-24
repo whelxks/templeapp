@@ -36,8 +36,8 @@ export const Sidebar = [
 
 
     {
-        title: 'TempleView',
-        path: '/templeVR',
+        title: 'Tribute Wall',
+        path: '/payrespects',
         icon: <GiIcons.GiByzantinTemple />,
         cName: 'nav-text',
        

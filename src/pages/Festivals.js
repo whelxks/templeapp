@@ -35,7 +35,7 @@ class Festivals extends Component {
                         <Card.Title>{fes.name}</Card.Title>
                         <Card.Subtitle className="mb-2 text-muted">Origin: {fes.origin}</Card.Subtitle>
                         <Card.Text>{fes.description}</Card.Text>
-                        <Card.Link href="#">View in VR</Card.Link>
+                        <Card.Link href="#">Find out more</Card.Link>
                         </Card.Body>
                     </Card>
                     </Col>

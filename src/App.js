@@ -8,6 +8,8 @@ import Homepage from "./pages/Homepage";
 import Calenderpage from "./pages/Calenderpage";
 import Profilepage from "./pages/Profilepage"
 import Informationpage from "./pages/Informationpage"
+import Tributepage from "./pages/Tributepage";
+import Gods from "./pages/Gods";
 
 class App extends Component {
   constructor(props) {
@@ -28,6 +30,8 @@ class App extends Component {
             <Route path="/homepage" component={Homepage} />
             <Route path="/calender" component={Calenderpage} />
             <Route path="/information" component={Informationpage} />
+            <Route path="/tribute" component={Tributepage} />
+            <Route path="/payrespects" component={Gods} />
              
 
           </Switch>

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Festivals from "./Festivals";
-import Gods from "./Gods";
 import "../index.css";
+import Temple from "./Temple";
 
 class Informationpage extends Component {
     constructor(props) {
@@ -34,7 +34,7 @@ class Informationpage extends Component {
         
                     <TabList>
                         <Tab style={{ minWidth: "50%" }} title="Festivals" >Festivals</Tab>
-                        <Tab style={{ minWidth: "50%" }} title="Gods">Gods</Tab>
+                        <Tab style={{ minWidth: "50%" }} title="Gods">Temple History</Tab>
                     </TabList>
                     
 
@@ -42,7 +42,7 @@ class Informationpage extends Component {
                         <Festivals />
                     </TabPanel>
                     <TabPanel>
-                        <Gods />
+                        <Temple />
                     </TabPanel>
                 </Tabs>
       
