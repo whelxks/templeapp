@@ -1,10 +1,11 @@
+
 const gods = [
   {
     id: 1,
-    name: "star",
-    description: "came from de moon",
-    origin: "Greece",
-    image: "https://picsum.photos/200/100",
+    name: "Maitreya",
+    description: "Golden",
+    origin: "India",
+    image: "images/BTHMainHall.jpg"
   },
 
   {

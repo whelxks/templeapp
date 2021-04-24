@@ -14,7 +14,7 @@ class Homepage extends Component {
                 left: 20,
                 top: 70,
               }}>
-                <h1 className="header-style" >Welcome to templeapp</h1>
+                <h1 className="header-style" >Welcome to Buddha Temple</h1>
            
         
             <Row>
