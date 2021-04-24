@@ -50,7 +50,7 @@ class Gods extends Component {
           ))}
         </Row>
 
-        
+        {/*
         <CardColumns>
           <Card>
             <Card.Img variant="top" src={"holder.js/100px160"} />
@@ -141,7 +141,7 @@ class Gods extends Component {
               </Card.Text>
             </Card.Body>
           </Card>
-        </CardColumns>
+        </CardColumns>*/}
       </Container>
     );
   }

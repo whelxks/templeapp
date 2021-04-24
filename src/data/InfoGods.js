@@ -5,7 +5,7 @@ const gods = [
     name: "Maitreya",
     description: "Golden",
     origin: "India",
-    image: "images/BTHMainHall.jpg"
+    image: "/images/BTHMainHall.jpg"
   },
 
   {
