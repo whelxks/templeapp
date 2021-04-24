@@ -15,7 +15,7 @@ class Temple extends Component {
                 left: 20,
                 top: 200,
               }}>
-                <h1 className="header-style" >history</h1>
+                <h1 className="header-style" >history hi</h1>
             </div>
         )
 
