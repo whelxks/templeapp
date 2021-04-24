@@ -15,6 +15,7 @@ class Gods extends Component {
     }
 
     render() {
+        console.log("Jodi");
         const { gods: allGods} = this.state;
         return (
             <Container style={{
