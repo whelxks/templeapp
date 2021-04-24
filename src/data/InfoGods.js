@@ -4,7 +4,7 @@ const gods = [
     name: "star",
     description: "came from de moon",
     origin: "Greece",
-    image: "https://picsum.photos/200/100",
+    image: "/images/BTHEntrance.jpg",
   },
 
   {

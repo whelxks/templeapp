@@ -6,7 +6,8 @@ class Tributepage extends Component {
 
 
     render() {
-        console.log(this.props);
+        //console.log(this.props);
+        console.log(this.props.location.image);
         return (
             <div style={{
                 position: "absolute",

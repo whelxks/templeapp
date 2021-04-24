@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { gods, getGods } from "../data/InfoGods";
 import { Card, Button } from "react-bootstrap";
 import { Image, Container, Row, Col } from "react-bootstrap";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
 class Gods extends Component {
   state = {
@@ -29,14 +30,17 @@ class Gods extends Component {
           {allGods.map((fes) => (
             <Col sm>
               <Card key={fes.id} style={{ width: "12rem" }}>
-                <Card.Img variant="top" src={fes.image} />
+                <Card.Img variant="top" src={process.env.PUBLIC_URL + fes.image} />
                 <Card.Body>
                   <Card.Title>{fes.name}</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">
                     Origin: {fes.origin}
                   </Card.Subtitle>
                   <Card.Text>{fes.description}</Card.Text>
-                  <Card.Link href="/tribute" params={fes.image}>Make Tribute</Card.Link>
+                  <Link to={{pathname: '/tribute', image: fes.image }}>
+                       
+                  <Card.Link>Make Tribute</Card.Link>
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -48,3 +52,8 @@ class Gods extends Component {
 }
 
 export default Gods;
+/*
+ <button className="btn btn-warning">
+                          <AiIcons.AiOutlineFolder/>
+                        </button>
+*/
