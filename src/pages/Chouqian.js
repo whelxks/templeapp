@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 
-class Tributepage extends Component {
+class Chouqian extends Component {
 
 
     render() {
@@ -20,4 +20,4 @@ class Tributepage extends Component {
     }
 }
  
-export default Tributepage;
+export default Chouqian;

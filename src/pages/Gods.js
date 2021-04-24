@@ -36,7 +36,7 @@ class Gods extends Component {
                     Origin: {fes.origin}
                   </Card.Subtitle>
                   <Card.Text>{fes.description}</Card.Text>
-                  <Card.Link href="/tribute">Make Tribute</Card.Link>
+                  <Card.Link href="/tribute" params={fes.image}>Make Tribute</Card.Link>
                 </Card.Body>
               </Card>
             </Col>
