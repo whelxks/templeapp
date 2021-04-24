@@ -10,6 +10,7 @@ import Profilepage from "./pages/Profilepage"
 import Informationpage from "./pages/Informationpage"
 import Tributepage from "./pages/Tributepage";
 import Gods from "./pages/Gods";
+import Chouqian from "./pages/Chouqian";
 
 class App extends Component {
   constructor(props) {
@@ -32,6 +33,9 @@ class App extends Component {
             <Route path="/information" component={Informationpage} />
             <Route path="/tribute" component={Tributepage} />
             <Route path="/payrespects" component={Gods} />
+            <Route path="/chouqian" component={Chouqian} />
+            
+            
              
 
           </Switch>

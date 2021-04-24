@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { gods, getGods } from "../data/InfoGods";
 import { Card, Button } from "react-bootstrap";
-import { Image, Container, Row, CardColumns, Col } from "react-bootstrap";
-
-
+import { Image, Container, Row, Col } from "react-bootstrap";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
 class Gods extends Component {
   state = {
@@ -41,7 +40,10 @@ class Gods extends Component {
                     Origin: {fes.origin}
                   </Card.Subtitle>
                   <Card.Text>{fes.description}</Card.Text>
-                  <Card.Link href="/tribute">Make Tribute</Card.Link>
+                  <Link to={{pathname: '/tribute', image: fes.image }}>
+                       
+                  <Card.Link>Make Tribute</Card.Link>
+                  </Link>
                 </Card.Body>
               </Card>
             </Col>
@@ -146,3 +148,8 @@ class Gods extends Component {
 }
 
 export default Gods;
+/*
+ <button className="btn btn-warning">
+                          <AiIcons.AiOutlineFolder/>
+                        </button>
+*/

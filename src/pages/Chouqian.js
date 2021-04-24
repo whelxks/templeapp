@@ -2,24 +2,22 @@ import React, { Component } from 'react';
 
 
 
-class Tributepage extends Component {
+class Chouqian extends Component {
 
 
     render() {
-        //console.log(this.props);
-        console.log(this.props.location.image);
+        console.log(this.props);
         return (
             <div style={{
                 position: "absolute",
                 left: 20,
                 top: 70,
               }}>
-                <h1 className="header-style" >god pic jossstick and stuff</h1>
-                
+                <h1 className="header-style" >chouqian</h1>
             </div>
         )
 
     }
 }
  
-export default Tributepage;
+export default Chouqian;
