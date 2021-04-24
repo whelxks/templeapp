@@ -12,7 +12,7 @@ class Tributepage extends Component {
                 left: 20,
                 top: 70,
               }}>
-                <h1 className="header-style" >god pic</h1>
+                <h1 className="header-style" >god pic jossstick and stuff</h1>
             </div>
         )
 

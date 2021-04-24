@@ -8,9 +8,11 @@ class Gods extends Component {
     gods: [],
   };
 
+
   componentDidMount() {
     this.setState({ gods: getGods() });
   }
+
 
   render() {
     const { gods: allGods } = this.state;
