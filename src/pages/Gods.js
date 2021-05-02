@@ -40,7 +40,8 @@ class Gods extends Component {
                     Origin: {fes.origin}
                   </Card.Subtitle>
                   <Card.Text>{fes.description}</Card.Text>
-                  <Link to={{pathname: '/tribute', image: fes.image }}>
+                  <Link to={{pathname: '/Chouqian', image: fes.image }}>
+                  {/* <Link to={{pathname: '/tribute', image: fes.image }}> */}
                        
                   <Card.Link>Make Tribute</Card.Link>
                   </Link>
