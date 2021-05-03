@@ -5,7 +5,20 @@ import * as GrIcons from "react-icons/gr";
 import * as AiIcons from "react-icons/ai";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 
+/**
+ * first, chouqian, then throw shengBei
+ * iff shengBei index gets 1 for 3 times consequtively, view qian
+ * else, redo the whole process.
+ */
+const qianResults = ["good", "bad", "effing good", "effing bad", "your code sphagett"];
+function chouqian(){
+    var qianIndex = Math.floor(Math.random()*(qianResults.length));
+    console.log(qianResults[qianIndex]);
+    return qianResults[qianIndex];
+}
 
+// 3 results only
+var shengBeiResults = [];
 
 class Chouqian extends Component {
     constructor(props) {
@@ -35,6 +48,44 @@ class Chouqian extends Component {
     }
 
     
+// throw shengBei, append to shengBeiResults the index
+/*function throwShengBei(){
+    // shengBeiIndex = 0 / 1
+    var shengBeiIndex = Math.floor(Math.random()*2);
+    shengBeiResults.push(shengBeiIndex);
+
+    console.log(shengBeiResults); // debug
+}
+
+function checkShengBei(){
+    let isQianCorrect;
+    for (var i = 0; i < shengBeiResults.length; i++){
+        if (shengBeiResults[i] === 0){
+            isQianCorrect = false;
+            console.log("is Qian correct? : " + isQianCorrect);
+            break;
+        }
+    }
+
+    if (shengBeiResults.length === 3){
+        isQianCorrect = true;
+
+        console.log("is Qian correct? : " + isQianCorrect);
+
+        // clear
+        shengBeiResults = [];
+    }
+    return isQianCorrect;
+}
+*/
+//test helper func
+// chouqian();
+// throwShengBei();
+// throwShengBei();
+// throwShengBei();
+// checkShengBei();
+// console.log(shengBeiResults);
+
 
 
     render() {
