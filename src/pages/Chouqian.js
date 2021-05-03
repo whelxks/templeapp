@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
 
-
-// shengBeiIndex is 0 or 1
-// 0 = same
-// 1 = opposite (xiaobei)
-
 /**
  * first, chouqian, then throw shengBei
  * iff shengBei index gets 1 for 3 times consequtively, view qian
- * else, redo the whole process
+ * else, redo the whole process.
  */
 const qianResults = ["good", "bad", "effing good", "effing bad", "your code sphagett"];
 function chouqian(){
@@ -17,10 +12,12 @@ function chouqian(){
     return qianResults[qianIndex];
 }
 
+// 3 results only
 var shengBeiResults = [];
 
 // throw shengBei, append to shengBeiResults the index
 function throwShengBei(){
+    // shengBeiIndex = 0 / 1
     var shengBeiIndex = Math.floor(Math.random()*2);
     shengBeiResults.push(shengBeiIndex);
 
@@ -45,7 +42,6 @@ function checkShengBei(){
         // clear
         shengBeiResults = [];
     }
-
     return isQianCorrect;
 }
 
@@ -56,10 +52,6 @@ function checkShengBei(){
 // throwShengBei();
 // checkShengBei();
 // console.log(shengBeiResults);
-
-
-
-
 
 
 class Chouqian extends Component {
