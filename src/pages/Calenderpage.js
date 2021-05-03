@@ -21,14 +21,14 @@ class Calenderpage extends Component {
           id: 0,
           title: 'Fire walking ceremony',
           allDay: true,
-          start: new Date(2021, 3, 8),
-          end: new Date(2021, 3, 10),
+          start: new Date(2021, 4, 8),
+          end: new Date(2021, 4, 10),
       },
       {
           id: 1,
-          title: 'Long Event',
-          start: new Date(2015, 3, 7),
-          end: new Date(2015, 3, 10),
+          title: 'Worship Event',
+          start: new Date(2021, 4, 21),
+          end: new Date(2021, 4, 28),
       },
 
       /*{

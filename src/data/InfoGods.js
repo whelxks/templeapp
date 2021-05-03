@@ -3,7 +3,7 @@ const gods = [
   {
     id: 1,
     name: "Murti",
-    description: "came from de moon",
+    description: "to grant a humans wishes",
     origin: "Greece",
     image: "/images/God1.png",
   },
@@ -11,38 +11,38 @@ const gods = [
   {
     id: 2,
     name: "Krishna",
-    description: "rainbow",
+    description: "pray for wealth and riches",
     origin: "India",
     image: "/images/God2.png",
   },
   {
     id: 3,
     name: "Shiva",
-    description: "rainbow",
-    origin: "India",
+    description: "pray for assurance and safety",
+    origin: "Africa",
     image: "/images/God3.png",
   },
 
   {
     id: 4,
     name: "Brahma",
-    description: "came from de moon",
-    origin: "Greece",
+    description: "gives you luck in life",
+    origin: "Thailand",
     image: "/images/God1.png",
   },
 
   {
     id: 5,
     name: "Vishnu",
-    description: "rainbow",
-    origin: "India",
+    description: "makes you smart and studios",
+    origin: "Egypt",
     image: "/images/God2.png",
   },
   {
     id: 6,
     name: "Concordia",
-    description: "rainbow",
-    origin: "India",
+    description: "helps you find love",
+    origin: "Burma",
     image: "/images/God3.png",
   },
 ];

@@ -24,6 +24,7 @@
     "react-scripts": "4.0.3",
     "react-spring": "^9.1.2",
     "react-tabs": "^3.2.2",
+    "styled-components": "^5.2.3",
     "typeface-sofia": "^1.1.13",
     "web-vitals": "^1.1.1"
   },
