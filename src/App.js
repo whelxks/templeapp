@@ -23,18 +23,21 @@ class App extends Component {
       
       <BrowserRouter>
       
-        
-          <Navbar />
-          <Switch>
+      
+          
+        <Switch>
+          <Route path="/chouqian" component={Chouqian} />
+          <Route path="/tribute" component={Tributepage} />
+            <div>
+            <Navbar />
      
             <Route path="/" exact component={Profilepage} />
             <Route path="/homepage" component={Homepage} />
             <Route path="/calender" component={Calenderpage} />
             <Route path="/information" component={Informationpage} />
-            <Route path="/tribute" component={Tributepage} />
             <Route path="/payrespects" component={Gods} />
-            <Route path="/chouqian" component={Chouqian} />
-            
+
+            </div>
             
              
 

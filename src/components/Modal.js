@@ -1,11 +1,10 @@
-//connect to react360 here using iframe
-//https://github.com/facebookarchive/react-360/issues/730
+
 
 import React, { Component } from 'react';
 
 
 
-class Temple extends Component {
+class Modal extends Component {
 
 
     render() {
@@ -15,11 +14,11 @@ class Temple extends Component {
                 left: 20,
                 top: 200,
               }}>
-                <h1 className="header-style" >Rituals History</h1>
+                <h1 className="header-style" >Modal</h1>
             </div>
         )
 
     }
 }
  
-export default Temple;
+export default Modal;

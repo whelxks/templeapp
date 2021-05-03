@@ -34,7 +34,7 @@ class Informationpage extends Component {
         
                     <TabList>
                         <Tab style={{ minWidth: "50%" }} title="Festivals" >Festivals</Tab>
-                        <Tab style={{ minWidth: "50%" }} title="Gods">Temple History</Tab>
+                        <Tab style={{ minWidth: "50%" }} title="Gods">Rituals</Tab>
                     </TabList>
                     
 

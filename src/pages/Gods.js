@@ -9,11 +9,9 @@ class Gods extends Component {
     gods: [],
   };
 
-
   componentDidMount() {
     this.setState({ gods: getGods() });
   }
-
 
   render() {
     const { gods: allGods } = this.state;
@@ -21,25 +19,28 @@ class Gods extends Component {
       <Container
         style={{
           position: "absolute",
-          left: 0,
+          left: 10,
           top: 120,
+          width: "100%",
         }}
-        className="grid"
+        
       >
         <Row>
           {allGods.map((fes) => (
-            <Col sm>
-              <Card key={fes.id} style={{ width: "12rem" }}>
-                <Card.Img variant="top" src={process.env.PUBLIC_URL + fes.image} />
+            <Col xs="4" className="grid"  key={fes.id}>
+              <Card key={fes.id} style={{ width: "12rem", left:10}}>
+                <Card.Img
+                  variant="top"
+                  src={process.env.PUBLIC_URL + fes.image}
+                />
                 <Card.Body>
                   <Card.Title>{fes.name}</Card.Title>
                   <Card.Subtitle className="mb-2 text-muted">
                     Origin: {fes.origin}
                   </Card.Subtitle>
                   <Card.Text>{fes.description}</Card.Text>
-                  <Link to={{pathname: '/tribute', image: fes.image }}>
-                       
-                  <Card.Link>Make Tribute</Card.Link>
+                  <Link to={{ pathname: "/tribute", image: fes.image, god:fes.name }}>
+                    <Card.Link>Make Tribute</Card.Link>
                   </Link>
                 </Card.Body>
               </Card>

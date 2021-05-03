@@ -1,25 +1,48 @@
 const gods = [
   {
     id: 1,
-    name: "star",
+    name: "Murti",
     description: "came from de moon",
     origin: "Greece",
-    image: "/images/BTHEntrance.jpg",
+    image: "/images/God1.png",
   },
 
   {
     id: 2,
-    name: "red",
+    name: "Krishna",
     description: "rainbow",
     origin: "India",
-    image: "https://picsum.photos/seed/picsum/200/100",
+    image: "/images/God2.png",
   },
   {
     id: 3,
-    name: "bleh",
+    name: "Shiva",
     description: "rainbow",
     origin: "India",
-    image: "https://picsum.photos/seed/picsum/200/100",
+    image: "/images/God3.png",
+  },
+
+  {
+    id: 4,
+    name: "Brahma",
+    description: "came from de moon",
+    origin: "Greece",
+    image: "/images/God1.png",
+  },
+
+  {
+    id: 5,
+    name: "Vishnu",
+    description: "rainbow",
+    origin: "India",
+    image: "/images/God2.png",
+  },
+  {
+    id: 6,
+    name: "Concordia",
+    description: "rainbow",
+    origin: "India",
+    image: "/images/God3.png",
   },
 ];
 
