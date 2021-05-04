@@ -1,23 +1,22 @@
-import { useSpring, animated } from 'react-spring'
+import { useSpring, animated, useRef } from 'react-spring'
 import qianTong from "../images/qianTong.png";
 
 function LoopObject() {
     const styles = useSpring({
-      loop: { reverse: true },
+      loop: { reverse: true},
       from: { x: 0 },
       to: { x: 100 },
     })
   
     return (
-      <animated.img 
-      style={{
-          width: "10%",
-          ...styles,
-        
-        }}
-      src={qianTong}
-        
-      />
+            <animated.img 
+            style={{
+                width: "10%",
+                ...styles
+                }}
+            src={qianTong}
+                
+            />
     )
   }
 

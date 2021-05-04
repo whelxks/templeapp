@@ -5,6 +5,7 @@ import * as GrIcons from "react-icons/gr";
 import * as AiIcons from "react-icons/ai";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import ButtontoopenModal from "../components/ButtontoopenModal";
+import ButtontoChouQian from "../components/ButtonToChouQian";
 import qianTong from "../images/qianTong.png";
 import { useSpring, animated } from 'react-spring'
 import shengBei from "../images/shengbei.png";
@@ -18,7 +19,8 @@ class Chouqian extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            loading: null,
+            chouQian: false,
+            shengBei: false,
            
        }
         this.playAnim = this.playAnim.bind(this);
@@ -27,11 +29,10 @@ class Chouqian extends Component {
 
 
     playAnim() {
-        console.log("test");
-        //start the anim here
-        
-
-        
+        this.setState({chouQian: true});
+        // console.log("test");
+        //start the anim here  
+           
     }
 
     Randomfunc() {
@@ -82,13 +83,6 @@ class Chouqian extends Component {
 
     
 
-//test helper func
-// chouqian();
-// throwShengBei();
-// throwShengBei();
-// throwShengBei();
-// checkShengBei();
-// console.log(shengBeiResults);
 
 
 
@@ -108,27 +102,40 @@ class Chouqian extends Component {
                 
                 <h1 className="header-style" >Chou Qian</h1>
 
+                {/* state  */}
+
+                {this.state.chouQian == true? (<LoopObject />): (<img style={ width: "10%"} src={qianTong} />)}
+
+
+                </div>
+
                        
                 <div style={{ position: "absolute", top: 30, left: -100, width: "100%"}} >
                     <Container>
                         <Row>
-                        <LoopObject />
-                        <col>  
-                            </col>
+                        {/* <LoopObject /> */}
                             <Col>
-                            <ButtontoopenModal />
+                                
+                                <Button variant="outline-dark" style={{ position: "absolute", width: "100%", fontFamily: "Sofia Pro", top: 40 }} onClick={this.startAnim} >
+                                    <AiIcons.AiOutlineShake size="17" style={{ marginRight: "5" }} /> Start Chouqian
+                                </Button>
+
+                                {/* <ButtontoopenModal /> */}
                             </Col>
                             
                             <Col>
-                            <Link to={{ pathname: "/payrespects"}}>
-                            <Button variant="outline-dark" style={{ position: "relative", width:"100%", fontFamily: "Sofia Pro", top:40 }}>
-                            <MdIcons.MdDone size="17" style={{ marginRight: "5" }} />Done
-                            </Button>
-                            </Link>
+                                <Link to={{ pathname: "/payrespects"}}>
+                                <Button variant="outline-dark" style={{ position: "relative", width:"100%", fontFamily: "Sofia Pro", top:40 }}>
+                                <MdIcons.MdDone size="17" style={{ marginRight: "5" }} />Done
+                                </Button>
+                                </Link>
                             </Col>
+
                         </Row>
                     </Container>
                 </div>
+
+                
             
 
                 

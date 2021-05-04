@@ -6,7 +6,7 @@ import "../index.css";
 import offeringcup from "../images/offeringcup.png";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 //import { ImageOverlay } from 'react-image-overlay-effect'
-import { Spring } from 'react-spring';
+import { useSpring, animated } from 'react-spring'
 import joss1 from "../images/joss1.png";
 import joss2 from "../images/joss2.png";
 import joss3 from "../images/joss3.png";
