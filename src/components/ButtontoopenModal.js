@@ -14,7 +14,7 @@ function ButtontoopenModal() {
     //this timeout is the duration of the animation!!
     const openModal = () => {
         setTimeout(() =>
-            setShowModal(prev => !prev), 5000)
+            setShowModal(prev => !prev), 3000)
     }
        
     

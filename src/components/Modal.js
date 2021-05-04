@@ -12,6 +12,7 @@ const Background = styled.div`
   display: flex;
   justify-content: 100%;
   align-items: center;
+  z-index: 99;
 `;
 
 const ModalWrapper = styled.div`
@@ -23,7 +24,7 @@ const ModalWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
-  z-index: 10;
+  z-index: 99;
   border-radius: 10px;
 `;
 
@@ -32,6 +33,7 @@ const ModalImg = styled.img`
   height: 300px;
   border-radius: 10px 0 0 10px;
   background: #000;
+  z-index: 99;
 `;
 
 const ModalContent = styled.div`
@@ -42,6 +44,7 @@ const ModalContent = styled.div`
   align-items: center;
   line-height: 1.8;
   color: #141414;
+  z-index: 99;
   p {
     margin-bottom: 1rem;
   }
