@@ -7,6 +7,7 @@ import qianTong from "../images/qianTong.png";
 import LoopObject from '../components/Loop';
 
 
+
 function ButtonToChouQian() {
 
     const [chouQian, startChouQian] = React.useState(false);
@@ -28,7 +29,7 @@ function ButtonToChouQian() {
                         
                         }}
                     src={qianTong}
-                        
+                    alt="qianTong"
                 />
                 ) : (
                     <LoopObject />
