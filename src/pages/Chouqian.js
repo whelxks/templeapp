@@ -5,14 +5,14 @@ import * as GrIcons from "react-icons/gr";
 import * as AiIcons from "react-icons/ai";
 import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
 import ButtontoopenModal from "../components/ButtontoopenModal";
-/**
- * first, chouqian, then throw shengBei
- * iff shengBei index gets 1 for 3 times consequtively, view qian
- * else, redo the whole process.
- */
+import qianTong from "../images/qianTong.png";
+import { useSpring, animated } from 'react-spring'
+import shengBei from "../images/shengbei.png";
+import xiaoBei from "../images/xiaobei.png";
+import yinBei from "../images/yinbei.png";
 
-
-
+import LoopObject from '../components/Loop';
+ 
 
 class Chouqian extends Component {
     constructor(props) {
@@ -29,6 +29,7 @@ class Chouqian extends Component {
     playAnim() {
         console.log("test");
         //start the anim here
+        
 
         
     }
@@ -95,6 +96,7 @@ class Chouqian extends Component {
         
         console.log(this.props);
         console.log(this.state);
+        
         return (
             <div style={{
                 position: "absolute",
@@ -102,26 +104,30 @@ class Chouqian extends Component {
                 top: 70,
                 width: "100%",
             }}>
+            
                 
                 <h1 className="header-style" >Chou Qian</h1>
 
                        
-                <div style={{ position: "absolute", top: 30, left: -100, width: "100%" }} >
-                <Container>
-                    <Row>
-                        <Col>
-                        <ButtontoopenModal />
-                        </Col>
-                        
-                        <Col>
-                        <Link to={{ pathname: "/payrespects"}}>
-                        <Button variant="outline-dark" style={{ position: "absolute", width:"100%", fontFamily: "Sofia Pro", top:40 }}>
-                        <MdIcons.MdDone size="17" style={{ marginRight: "5" }} />Done
-                        </Button>
-                        </Link>
-                        </Col>
-                    </Row>
-                </Container>
+                <div style={{ position: "absolute", top: 30, left: -100, width: "100%"}} >
+                    <Container>
+                        <Row>
+                        <LoopObject />
+                        <col>  
+                            </col>
+                            <Col>
+                            <ButtontoopenModal />
+                            </Col>
+                            
+                            <Col>
+                            <Link to={{ pathname: "/payrespects"}}>
+                            <Button variant="outline-dark" style={{ position: "relative", width:"100%", fontFamily: "Sofia Pro", top:40 }}>
+                            <MdIcons.MdDone size="17" style={{ marginRight: "5" }} />Done
+                            </Button>
+                            </Link>
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
             
 
