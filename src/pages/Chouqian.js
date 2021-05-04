@@ -18,10 +18,9 @@ class Chouqian extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            loading: null,
            
-            
-                
-        }
+       }
         this.playAnim = this.playAnim.bind(this);
        
     }
@@ -46,13 +45,15 @@ class Chouqian extends Component {
             return qianResults[qianIndex];
         }
         // 3 results only
-        var shengBeiResults = [];function throwShengBei(){
-        // shengBeiIndex = 0 / 1
-        var shengBeiIndex = Math.floor(Math.random()*2);
-        shengBeiResults.push(shengBeiIndex);
+        var shengBeiResults = [];
+        
+        function throwShengBei(){
+            // shengBeiIndex = 0 / 1
+            var shengBeiIndex = Math.floor(Math.random()*2);
+            shengBeiResults.push(shengBeiIndex);
 
-        console.log(shengBeiResults); // debug
-            }
+            console.log(shengBeiResults); // debug
+        }
 
         function checkShengBei(){
             let isQianCorrect;
@@ -102,7 +103,7 @@ class Chouqian extends Component {
                 width: "100%",
             }}>
                 
-                <h1 className="header-style" >See your luck for today!</h1>
+                <h1 className="header-style" >Chou Qian</h1>
 
                        
                 <div style={{ position: "absolute", top: 30, left: -100, width: "100%" }} >

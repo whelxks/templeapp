@@ -33,7 +33,7 @@ const openModal = setTimeout(() => {
             <GlobalStyle />
 
             <Button variant="outline-dark" style={{ position: "absolute", width: "100%", fontFamily: "Sofia Pro", top: 40 }} onClick={openModal}>
-                <AiIcons.AiOutlineShake size="17" style={{ marginRight: "5" }} />Shake de Cup
+                <AiIcons.AiOutlineShake size="17" style={{ marginRight: "5" }} /> Start Chouqian
             </Button>
         </div>
     );
