@@ -29,8 +29,8 @@ class Chouqian extends Component {
 
 
     playAnim() {
+        console.log("test");
         this.setState({chouQian: true});
-        // console.log("test");
         //start the anim here  
            
     }
@@ -103,9 +103,16 @@ class Chouqian extends Component {
                 <h1 className="header-style" >Chou Qian</h1>
 
                 {/* state  */}
-
-                {this.state.chouQian == true? (<LoopObject />): (<img style={ width: "10%"} src={qianTong} />)}
-
+                <div> 
+                    {this.state.chouQian === true? (<LoopObject />): (
+                    <img 
+                    style={{
+                        width: "10%",
+                        }}
+                    src={qianTong}
+                    alt="qianTong"
+                    />)}
+            
 
                 </div>
 
@@ -116,7 +123,7 @@ class Chouqian extends Component {
                         {/* <LoopObject /> */}
                             <Col>
                                 
-                                <Button variant="outline-dark" style={{ position: "absolute", width: "100%", fontFamily: "Sofia Pro", top: 40 }} onClick={this.startAnim} >
+                                <Button variant="outline-dark" style={{ position: "absolute", width: "100%", fontFamily: "Sofia Pro", top: 40 }} onClick={this.playAnim} >
                                     <AiIcons.AiOutlineShake size="17" style={{ marginRight: "5" }} /> Start Chouqian
                                 </Button>
 
