@@ -12,6 +12,7 @@ import shengBei from "../images/shengbei.png";
 import xiaoBei from "../images/xiaobei.png";
 import yinBei from "../images/yinbei.png";
 
+
 import LoopObject from '../components/Loop';
  
 
@@ -19,8 +20,9 @@ class Chouqian extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            chouQian: false,
+            chouQian: 0,
             shengBei: false,
+            results: false
            
        }
         this.playAnim = this.playAnim.bind(this);
@@ -28,11 +30,13 @@ class Chouqian extends Component {
     }
 
 
+
+
     playAnim() {
         console.log("test");
-        this.setState({chouQian: true});
-        //start the anim here  
-           
+        this.setState({chouQian: 1});
+        setTimeout(() => {this.setState({chouQian: 2}) }, 3000);
+        
     }
 
     Randomfunc() {
@@ -81,12 +85,32 @@ class Chouqian extends Component {
         
     }
 
-    
+
 
 
 
 
     render() {
+       
+
+        const renderChouQian = () => {
+        if (this.state.chouQian === 0) {
+            return (<img 
+                style={{
+                    width: "10%",
+                    }}
+                src={qianTong}
+                alt="qianTong"
+                />);
+                
+        } 
+        else if (this.state.chouQian === 1 ){
+            return (
+                <div>
+                    <LoopObject />       
+                </div>);
+            }
+        }
         
         console.log(this.props);
         console.log(this.state);
@@ -104,14 +128,22 @@ class Chouqian extends Component {
 
                 {/* state  */}
                 <div> 
-                    {this.state.chouQian === true? (<LoopObject />): (
+                    {/* {this.state.chouQian === 1 ? (
+                        <div>
+                          <LoopObject />       
+                        </div>
+                        
+                        
+                        ): (
                     <img 
                     style={{
                         width: "10%",
                         }}
                     src={qianTong}
                     alt="qianTong"
-                    />)}
+                    />)} */}
+                    {renderChouQian()}
+
             
 
                 </div>
